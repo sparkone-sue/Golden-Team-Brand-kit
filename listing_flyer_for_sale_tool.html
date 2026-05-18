@@ -90,13 +90,6 @@
   input[type=file] { position: absolute; width: 0; height: 0; opacity: 0; }
 
   .photo-controls { margin-top: 8px; }
-  .slider-row {
-    display: grid; grid-template-columns: 60px 1fr 40px; gap: 8px;
-    align-items: center; margin-bottom: 4px;
-  }
-  .slider-row label { font-size: 11px; color: var(--text-muted); margin: 0; }
-  .slider-row input[type=range] { width: 100%; }
-  .slider-row span { font-size: 11px; color: var(--text); text-align: right; font-variant-numeric: tabular-nums; }
   .btn-link {
     background: none; border: none; color: var(--text-muted); cursor: pointer;
     font-size: 11px; padding: 2px 0; text-decoration: underline;
@@ -212,23 +205,7 @@
         <span>📷</span>
       </label>
       <div class="photo-controls" id="controls-main" style="display:none">
-        <div class="slider-row">
-          <label>Zoom</label>
-          <input type="range" class="ph-slider" data-id="main" data-axis="zoom" min="50" max="200" value="100" step="5">
-          <span class="ph-val" data-id="main" data-axis="zoom">100%</span>
-        </div>
-        <div class="slider-row">
-          <label>X</label>
-          <input type="range" class="ph-slider" data-id="main" data-axis="x" min="-200" max="200" value="0" step="5">
-          <span class="ph-val" data-id="main" data-axis="x">0</span>
-        </div>
-        <div class="slider-row">
-          <label>Y</label>
-          <input type="range" class="ph-slider" data-id="main" data-axis="y" min="-200" max="200" value="0" step="5">
-          <span class="ph-val" data-id="main" data-axis="y">0</span>
-        </div>
-        <button class="btn-link" data-reset="main">Reset</button>
-        <button class="btn-link" data-clear="main" style="margin-left:10px">Remove</button>
+        <button class="btn-link" data-clear="main">Remove</button>
       </div>
     </div>
 
@@ -243,23 +220,7 @@
         <span>📷</span>
       </label>
       <div class="photo-controls" id="controls-s1" style="display:none">
-        <div class="slider-row">
-          <label>Zoom</label>
-          <input type="range" class="ph-slider" data-id="s1" data-axis="zoom" min="50" max="200" value="100" step="5">
-          <span class="ph-val" data-id="s1" data-axis="zoom">100%</span>
-        </div>
-        <div class="slider-row">
-          <label>X</label>
-          <input type="range" class="ph-slider" data-id="s1" data-axis="x" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s1" data-axis="x">0</span>
-        </div>
-        <div class="slider-row">
-          <label>Y</label>
-          <input type="range" class="ph-slider" data-id="s1" data-axis="y" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s1" data-axis="y">0</span>
-        </div>
-        <button class="btn-link" data-reset="s1">Reset</button>
-        <button class="btn-link" data-clear="s1" style="margin-left:10px">Remove</button>
+        <button class="btn-link" data-clear="s1">Remove</button>
       </div>
     </div>
 
@@ -274,23 +235,7 @@
         <span>📷</span>
       </label>
       <div class="photo-controls" id="controls-s2" style="display:none">
-        <div class="slider-row">
-          <label>Zoom</label>
-          <input type="range" class="ph-slider" data-id="s2" data-axis="zoom" min="50" max="200" value="100" step="5">
-          <span class="ph-val" data-id="s2" data-axis="zoom">100%</span>
-        </div>
-        <div class="slider-row">
-          <label>X</label>
-          <input type="range" class="ph-slider" data-id="s2" data-axis="x" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s2" data-axis="x">0</span>
-        </div>
-        <div class="slider-row">
-          <label>Y</label>
-          <input type="range" class="ph-slider" data-id="s2" data-axis="y" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s2" data-axis="y">0</span>
-        </div>
-        <button class="btn-link" data-reset="s2">Reset</button>
-        <button class="btn-link" data-clear="s2" style="margin-left:10px">Remove</button>
+        <button class="btn-link" data-clear="s2">Remove</button>
       </div>
     </div>
 
@@ -305,23 +250,7 @@
         <span>📷</span>
       </label>
       <div class="photo-controls" id="controls-s3" style="display:none">
-        <div class="slider-row">
-          <label>Zoom</label>
-          <input type="range" class="ph-slider" data-id="s3" data-axis="zoom" min="50" max="200" value="100" step="5">
-          <span class="ph-val" data-id="s3" data-axis="zoom">100%</span>
-        </div>
-        <div class="slider-row">
-          <label>X</label>
-          <input type="range" class="ph-slider" data-id="s3" data-axis="x" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s3" data-axis="x">0</span>
-        </div>
-        <div class="slider-row">
-          <label>Y</label>
-          <input type="range" class="ph-slider" data-id="s3" data-axis="y" min="-100" max="100" value="0" step="2">
-          <span class="ph-val" data-id="s3" data-axis="y">0</span>
-        </div>
-        <button class="btn-link" data-reset="s3">Reset</button>
-        <button class="btn-link" data-clear="s3" style="margin-left:10px">Remove</button>
+        <button class="btn-link" data-clear="s3">Remove</button>
       </div>
     </div>
 
@@ -853,31 +782,19 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
   };
 
   const photoState = {
-    main: { zoom: 100, x: 0, y: 0, src: null },
-    s1: { zoom: 100, x: 0, y: 0, src: null },
-    s2: { zoom: 100, x: 0, y: 0, src: null },
-    s3: { zoom: 100, x: 0, y: 0, src: null },
+    main: { src: null },
+    s1: { src: null },
+    s2: { src: null },
+    s3: { src: null },
   };
 
   function applyPhotoTransform(id) {
     const base = PHOTO_BASE[id];
-    const s = photoState[id];
-    const zoom = s.zoom / 100;
-    const newW = base.w * zoom;
-    const newH = base.h * zoom;
-    const newX = base.x - (newW - base.w) / 2 + s.x;
-    const newY = base.y - (newH - base.h) / 2 + s.y;
     const img = $('img-' + id);
-    img.setAttribute('x', newX);
-    img.setAttribute('y', newY);
-    img.setAttribute('width', newW);
-    img.setAttribute('height', newH);
-    // Update labels
-    document.querySelectorAll(`.ph-val[data-id="${id}"]`).forEach(el => {
-      const ax = el.dataset.axis;
-      if (ax === 'zoom') el.textContent = s.zoom + '%';
-      else el.textContent = (s[ax] > 0 ? '+' : '') + s[ax];
-    });
+    img.setAttribute('x', base.x);
+    img.setAttribute('y', base.y);
+    img.setAttribute('width', base.w);
+    img.setAttribute('height', base.h);
   }
 
   function setPhotoSrc(id, dataUrl, fileName) {
@@ -910,11 +827,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
       if (!file) return;
       const reader = new FileReader();
       reader.onload = (ev) => {
-        photoState[id] = { zoom: 100, x: 0, y: 0, src: ev.target.result };
-        // Reset slider DOM
-        document.querySelectorAll(`.ph-slider[data-id="${id}"]`).forEach(s => {
-          s.value = s.dataset.axis === 'zoom' ? 100 : 0;
-        });
+        photoState[id] = { src: ev.target.result };
         setPhotoSrc(id, ev.target.result, file.name);
         applyPhotoTransform(id);
       };
@@ -922,26 +835,6 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
     });
   });
 
-  // Sliders
-  document.querySelectorAll('.ph-slider').forEach(slider => {
-    slider.addEventListener('input', (e) => {
-      const id = e.target.dataset.id;
-      const ax = e.target.dataset.axis;
-      photoState[id][ax] = parseInt(e.target.value, 10);
-      applyPhotoTransform(id);
-    });
-  });
-
-  document.querySelectorAll('[data-reset]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const id = e.target.dataset.reset;
-      photoState[id].zoom = 100; photoState[id].x = 0; photoState[id].y = 0;
-      document.querySelectorAll(`.ph-slider[data-id="${id}"]`).forEach(s => {
-        s.value = s.dataset.axis === 'zoom' ? 100 : 0;
-      });
-      applyPhotoTransform(id);
-    });
-  });
   document.querySelectorAll('[data-clear]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       setPhotoSrc(e.target.dataset.clear, null, null);
